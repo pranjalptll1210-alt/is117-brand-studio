@@ -5,42 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An unfinished, neutral T-shirt storefront for the IS117 Brand Studio. Build a brand through deliberate, visible design choices."
+      content="OFFHOUR: Off the clock. On your terms. A plain white T-shirt and a classroom demo bag."
     />
-    <title>Your Brand — neutral storefront starter</title>
+    <title>OFFHOUR — Off the clock. On your terms.</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="campaign.css" />
     <script src="shop.js" defer></script>
+    <script src="gallery.js" defer></script>
+    <script src="reveal.js" defer></script>
   </head>
-  <body>
+  <body class="campaign-site">
     <a class="skip-link" href="#main">Skip to content</a>
     <aside class="starter-notice" aria-label="Starter information">
       <span
-        ><strong>Unfinished by design.</strong> This is a neutral teaching
-        starter. Replace its identity after your brand decisions.</span
+        ><strong>OFFHOUR /</strong> A streetwear concept. Demo bag only — no
+        orders or payments.</span
       >
-      <a href="studio.html"
-        >Enter the studio <span aria-hidden="true">↗</span></a
-      >
+      <a href="#product">Explore the tee <span aria-hidden="true">↗</span></a>
     </aside>
     <header class="site-header wrap">
       <a
         class="brand-link"
         href="index.html"
-        aria-label="Your Brand storefront home"
+        aria-label="OFFHOUR storefront home"
         ><img
-          class="wordmark"
-          src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
-          width="175"
-          height="26"
+          class="offhour-logo"
+          src="assets/logos/offhour.svg"
+          alt="OFFHOUR — O/H symbol and wordmark"
+          width="180"
+          height="27"
       /></a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html" aria-current="page">Shop</a>
+        <a class="nav-link" href="#product">Shop</a>
+        <a class="nav-link" href="#story">Our story</a>
         <a class="nav-link" href="styleguide.html">Style guide</a>
-        <a class="nav-link" href="studio.html"
-          >Studio <span aria-hidden="true">↗</span></a
-        >
       </nav>
       <a class="bag-link" href="#demo-bag" aria-label="View demo bag"
         >Demo bag <span id="bag-count" class="bag-count">0</span></a
@@ -48,36 +47,140 @@
     </header>
 
     <main id="main">
-      <section class="product-section wrap" aria-labelledby="product-title">
-        <div class="product-visual">
-          <div class="visual-label">
-            <span>001 / The starting point</span><span>Unbranded</span>
-          </div>
-          <img
-            class="shirt-image"
-            src="assets/white-shirt.svg"
-            alt="Plain white, unbranded short-sleeved T-shirt"
-            width="800"
-            height="880"
-            fetchpriority="high"
-          />
-          <div class="image-caption">
-            <span>One product. Room for your point of view.</span
-            ><span aria-hidden="true">↙</span>
-          </div>
+      <section class="campaign-hero" aria-labelledby="campaign-title">
+        <img
+          class="campaign-image"
+          src="assets/concepts/editorial.jpg"
+          alt="AI-generated editorial concept: an adult model in a plain white T-shirt and dark wide-leg pants in a charcoal passage"
+          width="1536"
+          height="1024"
+          fetchpriority="high"
+        />
+        <div class="campaign-shade" aria-hidden="true"></div>
+        <div class="campaign-copy wrap">
+          <p class="eyebrow">OFFHOUR / INDEPENDENT EXPRESSION</p>
+          <h1 id="campaign-title">Off the clock.<br />On your terms.</h1>
+          <p class="campaign-intro">
+            A plain white tee.<br />A point of view that's yours.
+          </p>
+          <a class="button button-primary" href="#product"
+            >Explore the tee <span aria-hidden="true">↗</span></a
+          >
         </div>
+        <div class="hero-foot wrap">
+          <span>01 / AFTER HOURS</span>
+          <p>AI-generated concept mockup. Styling and fit are illustrative.</p>
+          <a href="#product" aria-label="Scroll to the white T-shirt"
+            >Scroll to explore ↓</a
+          >
+        </div>
+      </section>
+      <div class="chapter-strip wrap">
+        <span>OFFHOUR / THE WHITE TEE</span
+        ><span>ONE PRODUCT. YOUR POINT OF VIEW.</span>
+      </div>
+
+      <section
+        id="product"
+        class="product-section wrap reveal"
+        aria-labelledby="product-title"
+      >
+        <figure
+          class="product-visual product-gallery"
+          aria-labelledby="gallery-title"
+        >
+          <div class="gallery-heading">
+            <h3 id="gallery-title">01 / THE WHITE TEE</h3>
+            <span>Concept mockups</span>
+          </div>
+          <div id="gallery-image-frame" class="gallery-image-frame">
+            <img
+              id="gallery-image"
+              class="shirt-image"
+              src="assets/concepts/front.jpg"
+              alt="AI-generated front concept mockup of a plain white T-shirt"
+              width="1122"
+              height="1402"
+              loading="eager"
+            />
+          </div>
+          <p id="gallery-caption" class="gallery-caption" aria-live="polite">
+            Front / AI-generated concept mockup.
+          </p>
+          <div
+            class="gallery-controls"
+            role="group"
+            aria-label="Concept mockup views"
+            hidden
+          >
+            <button
+              type="button"
+              class="gallery-choice"
+              data-view="front"
+              data-src="assets/concepts/front.jpg"
+              data-alt="AI-generated front concept mockup of a plain white T-shirt"
+              aria-pressed="true"
+              aria-controls="gallery-image-frame"
+            >
+              <img
+                src="assets/concepts/front.jpg"
+                alt=""
+                width="80"
+                height="100"
+                loading="eager"
+              /><span>01 / Front</span></button
+            ><button
+              type="button"
+              class="gallery-choice"
+              data-view="back"
+              data-src="assets/concepts/back.jpg"
+              data-alt="AI-generated back concept mockup of a plain white T-shirt"
+              aria-pressed="false"
+              aria-controls="gallery-image-frame"
+            >
+              <img
+                src="assets/concepts/back.jpg"
+                alt=""
+                width="80"
+                height="100"
+                loading="eager"
+              /><span>02 / Back</span></button
+            ><button
+              type="button"
+              class="gallery-choice"
+              data-view="angled"
+              data-src="assets/concepts/angled.jpg"
+              data-alt="AI-generated angled concept mockup of a plain white T-shirt"
+              aria-pressed="false"
+              aria-controls="gallery-image-frame"
+            >
+              <img
+                src="assets/concepts/angled.jpg"
+                alt=""
+                width="80"
+                height="100"
+                loading="eager"
+              /><span>03 / Angled</span>
+            </button>
+          </div>
+          <figcaption class="gallery-note">
+            AI-generated concept mockups, not verified product photographs.
+            Appearance, fabric, fit and construction are illustrative.
+          </figcaption>
+        </figure>
         <div class="product-information">
           <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span> Neutral product
-            / demo only
+            <span class="status-dot" aria-hidden="true"></span> 02 / THE
+            STARTING POINT
           </p>
-          <h1 id="product-title">The white<br />T-shirt.</h1>
-          <p class="product-intro">A plain shirt. A place to begin.</p>
-          <p class="muted product-description">
-            This starter has a working product page and room for a brand. Its
-            audience, personality, message, and visual direction are still yours
-            to decide.
+          <h2 id="product-title">One white tee.<br />Your own rules.</h2>
+          <p class="product-intro">
+            A plain white T-shirt. A starting point for your own expression.
           </p>
+          <a class="styling-shortcut" href="#styling"
+            >Three free ways to style it <span aria-hidden="true">↓</span></a
+          >
+          <h3 class="product-name">The white T-shirt.</h3>
           <div class="price-row">
             <p class="price">$28 <span>USD</span></p>
             <span class="micro-label">Fictional demo price</span>
@@ -129,23 +232,152 @@
             </div>
             <div>
               <dt>Brand identity</dt>
-              <dd>Not decided yet</dd>
+              <dd>OFFHOUR</dd>
             </div>
             <div>
               <dt>Product claims</dt>
-              <dd>None supplied</dd>
+              <dd>Fit and fabric not specified</dd>
             </div>
           </dl>
         </div>
       </section>
 
       <section
+        id="styling"
+        class="styling-section wrap reveal"
+        aria-labelledby="styling-title"
+      >
+        <div class="styling-heading">
+          <div>
+            <p class="eyebrow">03 / THE STYLE NOTES</p>
+            <h2 id="styling-title">One tee.<br />Three starting points.</h2>
+          </div>
+          <div class="styling-intro">
+            <p>A few ideas. No rules.</p>
+            <p>
+              Start with pieces you already own. Use these combinations as
+              inspiration for your own point of view.
+            </p>
+            <span class="styling-free"
+              >Free to read. No signup or purchase required.</span
+            >
+          </div>
+        </div>
+        <div class="outfit-grid">
+          <article class="outfit-card">
+            <div class="outfit-top">
+              <span class="outfit-number">01</span
+              ><span class="outfit-label">STYLE FORMULA</span>
+            </div>
+            <div class="outfit-palette tonal" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="outfit-colors">White / Charcoal / Black</p>
+            <h3>After hours.</h3>
+            <p class="outfit-formula">
+              White tee + charcoal trousers + dark shoes.
+            </p>
+            <p class="outfit-tip">
+              Let the white tee be the contrast. Start with dark trousers and
+              shoes you already own.
+            </p>
+          </article>
+          <article class="outfit-card">
+            <div class="outfit-top">
+              <span class="outfit-number">02</span
+              ><span class="outfit-label">STYLE FORMULA</span>
+            </div>
+            <div class="outfit-palette denim" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="outfit-colors">White / Washed gray / Black</p>
+            <h3>Everyday rhythm.</h3>
+            <p class="outfit-formula">
+              White tee + faded denim + simple sneakers.
+            </p>
+            <p class="outfit-tip">
+              Keep the combination familiar, then make it yours with the denim
+              and sneakers already in your wardrobe.
+            </p>
+          </article>
+          <article class="outfit-card">
+            <div class="outfit-top">
+              <span class="outfit-number">03</span
+              ><span class="outfit-label">STYLE FORMULA</span>
+            </div>
+            <div class="outfit-palette layer" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="outfit-colors">White / Burgundy / Charcoal</p>
+            <h3>Your extra layer.</h3>
+            <p class="outfit-formula">
+              White tee + open overshirt + dark trousers.
+            </p>
+            <p class="outfit-tip">
+              Leave an overshirt open so the white tee stays visible. Choose a
+              color that feels like you.
+            </p>
+          </article>
+        </div>
+        <p class="styling-footnote">
+          Outfit suggestions only. Other clothing is not offered by OFFHOUR, and
+          these ideas do not establish the T-shirt’s fabric or fit.
+        </p>
+      </section>
+      <section
+        class="editorial-section reveal"
+        aria-labelledby="editorial-title"
+      >
+        <div class="editorial-heading wrap">
+          <p class="eyebrow">04 / OFFHOUR EDITORIAL</p>
+          <h2 id="editorial-title">
+            Your pace.<br /><span>Your perspective.</span>
+          </h2>
+        </div>
+        <figure class="editorial-figure">
+          <img
+            src="assets/concepts/night-street.jpg"
+            alt="AI-generated night-street concept of an adult model wearing the plain white tee with dark oversized pants"
+            width="1536"
+            height="1024"
+            loading="eager"
+          />
+          <figcaption>
+            AI-generated editorial concept mockup. Styling only; not a verified
+            fit reference. Pants and shoes are not offered.
+          </figcaption>
+        </figure>
+      </section>
+      <section
+        id="story"
+        class="brand-story wrap reveal"
+        aria-labelledby="story-title"
+      >
+        <div>
+          <p class="eyebrow">05 / THE OFFHOUR IDEA</p>
+          <h2 id="story-title">Beyond<br />the schedule.</h2>
+        </div>
+        <div class="story-copy">
+          <p class="story-lead">
+            OFFHOUR takes its cue from late nights and independent expression.
+          </p>
+          <p>
+            A plain white tee becomes a starting point for a style—and a
+            rhythm—of your own.
+          </p>
+          <a class="story-link" href="#product"
+            >Find your starting point <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <p class="story-signoff" aria-hidden="true">OFFHOUR /</p>
+      </section>
+      <section
         id="demo-bag"
         class="bag-section wrap"
         aria-labelledby="bag-title"
       >
         <div>
-          <p class="eyebrow">A small working interaction</p>
+          <p class="eyebrow">06 / YOUR DEMO BAG</p>
           <h2 id="bag-title">Your demo bag.</h2>
         </div>
         <div class="bag-details">
@@ -167,30 +399,15 @@
           </p>
         </div>
       </section>
-
-      <section class="starter-next wrap" aria-labelledby="next-title">
-        <p class="eyebrow">For the person building this site</p>
-        <h2 id="next-title">The shirt stays.<br />The story is your work.</h2>
-        <div>
-          <p>
-            Choose who this is for, decide what the brand should express, and
-            make those choices visible. Keep the storefront and its
-            <a href="styleguide.html">live style guide</a> in sync.
-          </p>
-          <a class="button button-secondary" href="studio.html"
-            >See the studio brief <span aria-hidden="true">↗</span></a
-          >
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer wrap">
       <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
+        OFFHOUR <span class="footer-separator"> / </span> Off the clock. On your
+        terms.
       </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
+      <p class="footer-tagline">Concept storefront. No checkout.</p>
+      <a href="https://github.com/pranjalptll1210-alt/is117-brand-studio#readme"
         >Project README <span aria-hidden="true">↗</span></a
       >
     </footer>

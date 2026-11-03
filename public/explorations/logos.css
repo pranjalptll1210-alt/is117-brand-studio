@@ -1,0 +1,214 @@
+.logo-review .review-header,
+.logo-review main,
+.logo-review .review-footer {
+  width: min(1280px, calc(100% - 80px));
+  margin-inline: auto;
+}
+
+.logo-review .review-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 26px;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 0.8rem;
+}
+
+.logo-review .review-intro {
+  padding-block: 52px 42px;
+}
+
+.logo-review .review-intro h1 {
+  font-size: clamp(3.2rem, 6vw, 5.8rem);
+  font-weight: 900;
+  margin-top: 24px;
+}
+
+.logo-review .intro-description {
+  color: var(--color-muted);
+  max-width: 65ch;
+  font-size: 0.95rem;
+  margin-top: 24px;
+}
+
+.logo-review .concept-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.logo-review .concept-card {
+  min-width: 0;
+  border: 1px solid var(--color-line);
+  padding: 28px;
+  background: var(--color-soft);
+}
+
+.logo-review .concept-heading h2 {
+  font-size: 1.7rem;
+  letter-spacing: -0.04em;
+}
+
+.logo-review .concept-heading p {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 8px;
+}
+
+.logo-review .large-stage {
+  display: grid;
+  place-items: center;
+  min-height: 210px;
+  margin-block: 20px;
+  background: #171518;
+}
+
+.logo-review .large-stage img {
+  width: min(85%, 380px);
+  height: auto;
+}
+
+.logo-review .nav-demo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 16px;
+  border: 1px solid var(--color-line);
+  background: var(--color-paper);
+}
+
+.logo-review .nav-demo img {
+  width: 180px;
+  height: auto;
+}
+
+.logo-review .nav-demo span {
+  font-size: 0.65rem;
+  white-space: nowrap;
+}
+
+.logo-review .sample-label {
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  margin-top: 10px;
+}
+
+.logo-review .small-demo {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-inline: 16px;
+  margin-top: 20px;
+  border: 1px solid var(--color-line);
+}
+
+.logo-review .small-demo img {
+  width: 110px;
+  height: auto;
+}
+
+.logo-review .small-demo .standalone {
+  width: 24px;
+  height: 24px;
+}
+
+.logo-review .light-stage {
+  display: grid;
+  place-items: center;
+  background: #f3efe8;
+  margin-top: 24px;
+  min-height: 140px;
+  padding: 20px;
+}
+
+.logo-review .light-stage img {
+  width: min(90%, 270px);
+  height: auto;
+}
+
+.logo-review .concept-notes {
+  border-top: 1px solid var(--color-line);
+  padding-top: 24px;
+  margin-top: 24px;
+}
+
+.logo-review .concept-notes h3 {
+  font-size: 0.85rem;
+}
+
+.logo-review .concept-notes p {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 8px;
+}
+
+.logo-review .concept-notes h3:not(:first-child) {
+  margin-top: 24px;
+}
+
+.logo-review .concept-notes a {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 0.8rem;
+}
+
+.logo-review .review-note {
+  padding: 32px;
+  margin-block: 36px;
+  border-left: 3px solid #bb6b82;
+  background: var(--color-soft);
+}
+
+.logo-review .review-note h2 {
+  font-size: 1.5rem;
+}
+
+.logo-review .review-note p {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 14px;
+  max-width: 90ch;
+}
+
+.logo-review .review-footer {
+  font-size: 0.65rem;
+  color: var(--color-muted);
+  padding-block: 24px 40px;
+}
+
+@media (width <= 760px) {
+  .logo-review .review-header,
+  .logo-review main,
+  .logo-review .review-footer {
+    width: calc(100% - 40px);
+  }
+
+  .logo-review .review-header {
+    font-size: 0.7rem;
+    gap: 14px;
+  }
+
+  .logo-review .concept-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-review .concept-card {
+    padding: 20px;
+  }
+
+  .logo-review .nav-demo {
+    padding-inline: 10px;
+    gap: 8px;
+  }
+
+  .logo-review .nav-demo span {
+    font-size: 0.6rem;
+  }
+
+  .logo-review .review-note {
+    padding: 24px;
+  }
+}

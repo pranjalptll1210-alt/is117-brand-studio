@@ -1,0 +1,498 @@
+.offhour {
+  --ink: #f3efe8;
+  --muted: #bdb6b4;
+  --night: #111112;
+  --charcoal: #202022;
+  --wine: #691e33;
+  --line: #555052;
+
+  margin: 0;
+  background: var(--night);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.offhour h1 span {
+  display: block;
+}
+
+.offhour dd p {
+  margin-bottom: 0;
+}
+
+.offhour * {
+  box-sizing: border-box;
+}
+
+.offhour a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+
+.offhour button,
+.offhour input {
+  font: inherit;
+}
+
+.offhour button,
+.offhour a {
+  touch-action: manipulation;
+}
+
+.offhour :focus-visible {
+  outline: 3px solid #eda2b7;
+  outline-offset: 5px;
+}
+
+.offhour .skip {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 10;
+  background: var(--ink);
+  color: var(--night);
+  padding: 12px;
+}
+
+.offhour .skip:focus {
+  top: 12px;
+}
+
+.offhour .preview-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding: 12px 4vw;
+  background: var(--wine);
+  font-size: 12px;
+}
+
+.offhour .preview-bar span {
+  margin-right: auto;
+}
+
+.offhour .masthead {
+  margin: 0 4vw;
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.offhour .wordmark {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-decoration: none;
+}
+
+.offhour .wordmark span {
+  margin-left: 10px;
+  color: #d4869c;
+}
+
+.offhour .masthead p,
+.offhour .eyebrow,
+.offhour .plate-label,
+.offhour figcaption,
+.offhour footer {
+  font-size: 11px;
+  letter-spacing: 1.6px;
+}
+
+.offhour .masthead > a:last-child {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.offhour .hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 30px 5vw;
+  padding: 46px 4vw 52px;
+  isolation: isolate;
+}
+
+.offhour .intro {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.offhour .eyebrow {
+  margin: 0 0 30px;
+  color: var(--muted);
+}
+
+.offhour h1 {
+  margin: 0;
+  font-size: clamp(45px, 5.8vw, 88px);
+  font-weight: 900;
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+}
+
+.offhour .support {
+  max-width: 34ch;
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.offhour .product-plate {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / 3;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--charcoal);
+  margin: 0;
+  padding: 22px;
+  overflow: hidden;
+}
+
+.offhour .product-plate::before {
+  content: "";
+  position: absolute;
+  width: 84%;
+  aspect-ratio: 1;
+  border: 1px solid #a45169;
+  border-radius: 50%;
+  left: 8%;
+  top: 7%;
+  z-index: -1;
+}
+
+.offhour .plate-label {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  font-size: 9px;
+  margin-bottom: 24px;
+}
+
+.offhour .product-plate img {
+  position: relative;
+  width: 100%;
+  max-height: 430px;
+  height: auto;
+  object-fit: contain;
+}
+
+.offhour figcaption {
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.offhour .shop {
+  grid-column: 1;
+  grid-row: 2;
+  max-width: 490px;
+}
+
+.offhour .product-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+
+.offhour h2 {
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.offhour .price {
+  font-size: 22px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.offhour .price span {
+  font-size: 11px;
+}
+
+.offhour .demo-price {
+  margin: 3px 0 16px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.offhour fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.offhour legend {
+  font-size: 13px;
+}
+
+.offhour #size-help {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 4px 0 12px;
+}
+
+.offhour .sizes {
+  display: flex;
+  gap: 8px;
+}
+
+.offhour .sizes label {
+  position: relative;
+  cursor: pointer;
+}
+
+.offhour .sizes input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.offhour .sizes span {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 44px;
+  border: 1px solid var(--line);
+}
+
+.offhour .sizes input:checked + span {
+  color: var(--night);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.offhour .sizes input:focus-visible + span {
+  outline: 3px solid #eda2b7;
+  outline-offset: 3px;
+}
+
+.offhour #size-error {
+  color: #ffb4c8;
+  font-size: 13px;
+}
+
+.offhour .add {
+  background: var(--wine);
+  color: var(--ink);
+  border: 1px solid #a45169;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 18px;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: background 160ms ease;
+}
+
+.offhour .add:hover {
+  background: #822a44;
+}
+
+.offhour .disclaimer {
+  color: var(--muted);
+  font-size: 11px;
+  margin: 12px 0 0;
+  max-width: 65ch;
+}
+
+.offhour .bag {
+  margin: 0 4vw;
+  padding: 32px 0;
+  border-block: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.offhour .bag p {
+  margin-top: 0;
+}
+
+.offhour .bag button {
+  padding: 10px 14px;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.offhour .bag button:disabled {
+  color: var(--muted);
+  cursor: default;
+}
+
+.offhour .annotations {
+  padding: 54px 4vw;
+  max-width: 1100px;
+}
+
+.offhour .annotations .eyebrow {
+  margin-bottom: 12px;
+}
+
+.offhour .annotations h2 {
+  font-size: 32px;
+}
+
+.offhour dl > div {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 24px;
+  border-top: 1px solid var(--line);
+  padding: 18px 0;
+}
+
+.offhour dt {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.offhour dd {
+  margin: 0;
+}
+
+.offhour .annotations > p:last-child {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.offhour footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 24px 4vw;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.offhour.modernist .product-plate {
+  background: radial-gradient(circle at 50% 42%, #691e33 0 42%, #202022 42.2%);
+}
+
+.offhour.postmodernist .hero {
+  background-image: radial-gradient(#7772 1px, transparent 1px);
+  background-size: 6px 6px;
+}
+
+.offhour.postmodernist .intro {
+  position: relative;
+  z-index: 2;
+}
+
+.offhour.postmodernist h1 span:last-child {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.07em;
+  margin-left: 6%;
+}
+
+.offhour.postmodernist .product-plate {
+  transform: rotate(2deg);
+  background: #302c2e;
+  border: 1px solid #777;
+}
+
+.offhour.postmodernist .product-plate::before {
+  width: 160%;
+  height: 130px;
+  border: 0;
+  border-radius: 0;
+  background: var(--wine);
+  transform: rotate(-22deg);
+  left: -30%;
+  top: 9%;
+  z-index: 0;
+}
+
+.offhour.postmodernist .plate-label,
+.offhour.postmodernist figcaption {
+  position: relative;
+  z-index: 1;
+}
+
+.offhour.postmodernist .shop {
+  background: var(--night);
+  padding: 16px 20px 20px;
+  border-left: 4px solid #a45169;
+}
+
+@media (width <= 700px) {
+  .offhour .masthead {
+    padding: 20px 0;
+  }
+
+  .offhour .masthead p {
+    display: none;
+  }
+
+  .offhour .hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-top: 30px;
+  }
+
+  .offhour .intro,
+  .offhour .product-plate,
+  .offhour .shop {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .offhour h1 {
+    font-size: clamp(44px, 10.7vw, 72px);
+  }
+
+  .offhour .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .offhour .support {
+    margin-top: 20px;
+  }
+
+  .offhour .product-plate {
+    padding: 18px;
+  }
+
+  .offhour .product-plate img {
+    max-height: 330px;
+  }
+
+  .offhour .shop {
+    max-width: none;
+  }
+
+  .offhour .bag,
+  .offhour dl > div {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .offhour.postmodernist .product-plate {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .offhour .add {
+    transition: none;
+  }
+}
