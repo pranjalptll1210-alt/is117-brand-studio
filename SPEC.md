@@ -6,10 +6,14 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: Baseline ready to try; brand decisions pending.
+- Stage: Design and implementation completed; learner browser observations and learning-record accuracy review completed; final pull-request review and merge remain pending.
 - Current feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: Pending learner scope agreement.
-- Next small decision: Confirm the first slice after trying the neutral storefront.
+- Status: Scrolling concept storefront implemented; BRAND-001 remains in progress, not kept or merged.
+- Next small decision: Review the checked pull request before deciding whether to merge.
+
+- Issue: [BRAND-001 #1](https://github.com/pranjalptll1210-alt/is117-brand-studio/issues/1), verified open in GitHub; scope includes identity, previews, logo, storefront, shared guide, ethical persuasion and checks.
+- Branch: `codex/brand-001-offhour`.
+- Learner approved the expanded Design A layout, four generated concept images and proposed story before implementation. Implementation is on the feature branch; issue #1 records the scope.
 
 ## Product boundary
 
@@ -19,24 +23,29 @@ The product is the same white T-shirt throughout the comparison. The baseline of
 
 The primary need guides the page. Give the secondary card one contrasting need to check that same page; keep both cards brief.
 
-| Tiny card                             | Primary audience          | Secondary audience        |
-| ------------------------------------- | ------------------------- | ------------------------- |
-| Person in a concrete situation        | Not chosen yet            | Not chosen yet            |
-| Goal or meaning they seek             | Not chosen yet            | Not chosen yet            |
-| Concern before choosing               | Not chosen yet            | Not chosen yet            |
-| What the page should help them decide | Not chosen yet            | Not chosen yet            |
-| Evidence or assumption                | Assumption; not validated | Assumption; not validated |
+Learner supplied the overall audience: college students and young adults aged 18–30 interested in oversized streetwear, minimalist fashion, and everyday essentials. The learner explicitly adopted both AI-proposed situational hypotheses. They remain unvalidated audience assumptions, not customer research. The learner explains that the primary audience suits effortless streetwear for casual outings and late-night hangouts; the secondary audience can style a plain white tee with different outfits. Both share an interest in minimalist streetwear and uncomplicated personal expression. Comfort is a desired audience experience, not a verified product claim.
+
+| Tiny card                             | Primary hypothesis (learner adopted)                       | Secondary hypothesis (learner adopted)                     |
+| ------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
+| Person in a concrete situation        | College student heading from class to a late-night hangout | Young adult choosing an everyday outfit                    |
+| Goal or meaning they seek             | Individuality through understated streetwear               | A simple piece that works with an existing wardrobe        |
+| Concern before choosing               | A plain white tee may feel too generic                     | Moody branding may obscure the actual product              |
+| What the page should help them decide | Does this fit how I want to express myself?                | Can I clearly inspect the shirt and understand the demo?   |
+| Evidence or assumption                | AI-proposed, learner adopted with reasoning; unvalidated   | AI-proposed contrasting need, learner adopted; unvalidated |
 
 ## Early brand brief
 
-| Decision                                 | Agreement      |
-| ---------------------------------------- | -------------- |
-| Brand name                               | Not chosen yet |
-| One-sentence promise                     | Not chosen yet |
-| Primary archetype: the brand's character | Not chosen yet |
-| Three voice traits                       | Not chosen yet |
-| One example line in this voice           | Not chosen yet |
-| Learner's predicted audience effect      | Not chosen yet |
+| Decision                                 | Agreement                                                                                                                                                                                                              |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Brand name                               | OFFHOUR — learner chosen                                                                                                                                                                                               |
+| Concept                                  | Streetwear inspired by late-night culture, individuality and effortless style — learner supplied                                                                                                                       |
+| One-sentence promise                     | Everyday streetwear for expressing yourself on your own terms — AI-proposed, learner adopted because it represents individuality, personal style and confidence in what you wear.                                      |
+| Primary archetype: the brand's character | The Rebel — learner chosen; applied to brand character, not a customer classification                                                                                                                                  |
+| Three voice traits                       | Bold, Direct, Effortless — learner chosen                                                                                                                                                                              |
+| One example line in this voice           | “Off the clock. On your terms.” — learner's tagline                                                                                                                                                                    |
+| Learner's predicted audience effect      | Learner expects dark colors and oversized type to feel bold, confident, mysterious, premium and modern; the white shirt should stand out and shopping should remain clear. Prediction, not measured audience response. |
+
+Learner-selected aesthetic: black/charcoal backgrounds, off-white typography, deep burgundy accents, oversized editorial type, clean premium layouts, moody streetwear photography and subtle animation. The paired comparison previews retain the original illustration as historical comparison evidence. The current storefront uses explicitly labeled AI-generated photorealistic concept mockups, authorized by the learner; these do not verify real product appearance or specifications. Oversized fit, comfort, fabric and other product claims are unsupported and are not advertised as facts.
 
 ## Visual decision
 
@@ -44,25 +53,47 @@ Compare two small hero previews before building the whole page. Hold the product
 
 A simple original SVG wordmark is enough. Show small-size and one-color presentations; they may use the same asset when it works.
 
-| Item                                              | Agreement or evidence |
-| ------------------------------------------------- | --------------------- |
-| Shared headline / support / action                | Not chosen yet        |
-| Modernist preview, reference, and annotations     | Not chosen yet        |
-| Postmodernist preview, reference, and annotations | Not chosen yet        |
-| Chosen direction and reason                       | Not chosen yet        |
-| Original SVG logo                                 | Not chosen yet        |
-| Monochrome and small-size variants                | Not chosen yet        |
-| Logo review at actual use size                    | Not checked yet       |
-| Shared palette, typography, spacing, and assets   | Not chosen yet        |
+| Item                                              | Agreement or evidence                                                                                                                                                                                                                                                                                                                                                                       |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Shared headline / support / action                | Preview copy (AI draft): “Off the clock. On your terms.” / “A plain white T-shirt. A starting point for your own expression.” / “Add to demo bag”. Same original white-shirt SVG, $28 USD fictional demo price and sizes S/M/L/XL in both.                                                                                                                                                  |
+| Modernist preview, reference, and annotations     | [Preview A](public/explorations/modernist.html); Müller-Brockmann, Beethoven, 1955; see [research notes](docs/explorations/offhour.md).                                                                                                                                                                                                                                                     |
+| Postmodernist preview, reference, and annotations | [Preview B](public/explorations/postmodernist.html); Weingart, Schreibkunst, 1981; see [research notes](docs/explorations/offhour.md).                                                                                                                                                                                                                                                      |
+| Chosen direction and reason                       | Design A (modernist), learner reviewed both previews and chose its layout, structure and clarity: cleaner, easier to shop, and consistent with OFFHOUR. Learner later reviewed the updated hero, gallery, editorial, story and demo bag, and reaffirmed Design A, especially the dark colors, realistic mockups, bold type and scrollable layout.                                           |
+| Original SVG logo                                 | Learner selected Option B, O/H symbol + OFFHOUR name. [Approved shared SVG](public/assets/logos/offhour.svg). Reason: separate symbol could serve tags, packaging and social media while the name remains recognizable; geometry matches the clean modern streetwear identity.                                                                                                              |
+| Monochrome and small-size variants                | [Black one-color lockup](public/assets/logos/offhour-black.svg), 180px shared navigation lockup, 110px small example and [24px standalone symbol](public/assets/logos/offhour-symbol.svg) in the live guide.                                                                                                                                                                                |
+| Logo review at actual use size                    | Learner reviewed both initial concepts and selected B. Requested slightly greater symbol/name spacing; name translation increased by 12 SVG units with viewBox widened equally. Agent inspected the revised navigation and guide at desktop/narrow widths, including 180px navigation, 110px small lockup, 24px symbol and solid-black version; shared asset and no-overflow checks passed. |
+| Shared palette, typography, spacing, and assets   | Learner selected color roles and editorial scale; exact values and type treatments are preview proposals in [scoped CSS](public/explorations/offhour.css). Current shared system is implemented in public/styles.css and public/campaign.css and displayed live in public/styleguide.html.                                                                                                  |
+
+### Current layout and product presentation
+
+Learner retained Design A for clarity and ease of shopping, then reported that the refined illustration still looked cartoon-like. After reviewing an AI proposal, learner explicitly approved the following larger presentation and story before implementation:
+
+- Scrollable hero, interactive product gallery and shopping controls, full-width editorial, brand story, temporary demo bag and linked live style guide. Large typography, the chosen palette, responsive navigation and restrained section-entry animation retain the modernist foundation.
+- Three distinct coordinated AI-generated plain-white-tee concept views: front, back and angled; clickable thumbnails update the main image, selected button, text alternative and caption. One adult-model editorial concept, wearing a white tee and dark oversized pants, remains in the hero; a separate night-street adult-model concept now appears in the editorial section. Pants and shoes are not offered.
+- Images visibly say **AI-generated concept mockup**, with no claim that generated fabric, seams, drape, silhouette, construction or fit are verified. This supersedes the earlier source-preserving illustration approach. The product remains a plain white T-shirt; no new product features or facts are asserted.
+- Approved story (AI-drafted, learner approved): “OFFHOUR takes its cue from late nights and independent expression. A plain white tee becomes a starting point for a style—and a rhythm—of your own.” Approval is not additional learner reasoning.
+- [Storefront](public/index.html), [shared campaign styles](public/campaign.css), [gallery](public/gallery.js), [motion](public/reveal.js), [live guide](public/styleguide.html). [Image prompts and saved assets](docs/reviews/concept-prompts.md).
+- Size selector and original [demo bag script](public/shop.js) retained. No checkout, persistence, enrollment or extra product added. Content is visible without JavaScript; reduced-motion preferences disable section-entry effects.
+- Earlier [illustration gallery](docs/reviews/gallery.md) and [paired previews](docs/explorations/offhour.md) remain historical evidence; current validation is in [campaign review](docs/reviews/campaign.md).
+
+### Learner campaign review and editorial adjustment
+
+Learner reports reviewing the hero, product gallery, editorial section, brand story and demo bag. They like the overall design and retain Design A, specifically the dark colors, realistic T-shirt mockups, bold typography and scrollable layout. This was visual feedback and direction approval, not a merge decision. Subsequent keyboard and narrow-window observations are recorded in Evidence.
+
+Learner selected the night-street editorial direction because it adds visual variety, matches the after-hours identity and feels more like a real streetwear brand. A new generated night-street scene is implemented in the editorial section and shared guide; the original hero remains. Plain white tee, dark pants and visible concept-mockup disclosure are preserved. The learner subsequently reviewed and chose to keep the new night-street image because it fits the brand identity and makes the website more visually interesting.
+
+Learner approved Option B with a slight spacing increase, now shared by storefront navigation and live style guide. The original comparison proposals remain preserved. The selected SVG uses original paths, a single flat color and no external fonts. See [logo review notes](docs/reviews/logos.md).
 
 ## Ethical persuasion
 
 Choose two applications that help the visitor make a voluntary, informed decision. Record their real implementation and mechanism rather than a principle name alone. Required size selection or validation alone does not establish consistency. Do not invent social proof, scarcity, authority, or product facts.
 
-| Principle      | Actual copy or interaction | Visitor benefit / factual support |
-| -------------- | -------------------------- | --------------------------------- |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
+| Principle                      | Actual copy or interaction                                                                                                                                                                                                                                                                                               | Visitor benefit / factual support                                                                                                                                                                                                                                                                                            |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Reciprocity — learner approved | [Free styling section](public/index.html#styling): “One tee. Three starting points.” Three ungated outfit formulas: charcoal trousers/dark shoes, faded denim/sneakers, and open overshirt/dark trousers. Product introduction links directly to the notes. Explicitly free to read with no signup or purchase required. | Learner explains that the audience enjoys streetwear and different ways to style basics; three ideas help them imagine the tee in their own wardrobe and support individuality. Useful ideas are offered without obligation; other clothing is not sold here and no fabric/fit facts are implied.                            |
+| Liking — learner approved      | Existing approved independent-expression [brand story](public/index.html#story) together with the labeled editorial styling. Story: “OFFHOUR takes its cue from late nights and independent expression.”                                                                                                                 | Proposed mechanism is similarity in taste/values, helping visitors assess identity fit. Learner explicitly approved this application through story/editorial styling; their fuller explanation was for the styling guide. No fake founder biography, customer community, testimonials or measured conversion effect claimed. |
+
+Learner selected the free styling guide after AI proposed these two applications, explaining that showing three ways to style a plain white tee would help visitors imagine it in their own wardrobes. They requested natural editorial integration, not an advertisement, and approved Liking through the existing story and styling. Both are now implemented. The live guide shares the same styling cards/classes and describes the intended mechanisms. Framework source: [Cialdini / Influence at Work](https://www.influenceatwork.com/7-principles-of-persuasion/); no effect has been measured for this prototype.
 
 ## BRAND-001 — first branded storefront and live style guide
 
@@ -82,10 +113,12 @@ Keep when:
 
 Write a short result and link only evidence that exists. A passing browser check is evidence for its assertions, not customer research or proof of full accessibility.
 
-| Spec ID   | Files           | Issue / PR      | Actual checks and observations            |
-| --------- | --------------- | --------------- | ----------------------------------------- |
-| BRAND-001 | Not changed yet | Not created yet | Not run yet; learner observations pending |
+| Spec ID   | Files                                                                                                               | Issue / PR                                                                                     | Actual checks and observations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| --------- | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BRAND-001 | [Paired previews](docs/explorations/offhour.md); [current campaign implementation/review](docs/reviews/campaign.md) | [Issue #1](https://github.com/pranjalptll1210-alt/is117-brand-studio/issues/1); PR not created | Latest `npm run check`: formatting/lint + 7 server + 14 browser tests passed, including all three concept views, retained size/bag state, no-JS content and reduced motion. See campaign review for render evidence. Learner reviewed the updated campaign, retained Design A and identified repeated editorial imagery as an open refinement. Option B logo selected and integrated with requested spacing. Both ethical applications approved and implemented; latest prepared checks passed 7 server + 14 browser tests. Learner explained that the missing-size case catches incomplete bag items and requires clear feedback with count 0. Learner reports visible focus moving with Tab, backward navigation with Shift+Tab and keyboard interaction with controls; the indicator helps identify the current element. Learner also reports readable images/text/buttons, vertically stacked sections and no overlap or horizontal scrolling noticed in a narrow browser window; this is not an actual-phone/touch test. Night-street editorial selected with reasoning and implemented; audience hypotheses confirmed and new editorial image retained; brand promise confirmed; learning record reviewed and approved for publication with the requested status correction; pull request and keep/merge remain pending. |
 
 ## Later
 
 No follow-up is selected. After keeping `BRAND-001`, choose one next cycle: perhaps a brand story, a supported fit guide, or richer demo-bag behavior. Agree its scope and add one new spec ID at that time.
+
+Learner confirmed satisfaction with the overall website and brand direction and requested no further major design changes. This is design approval, not approval to merge an unreviewed pull request.

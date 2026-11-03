@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="OFFHOUR modernist hero exploration for BRAND-001. Classroom demo only."
+    />
+    <title>OFFHOUR — A / Modernist preview</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="offhour.css" />
+    <script src="../shop.js" defer></script>
+  </head>
+  <body class="offhour modernist">
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="preview-bar">
+      <span>BRAND-001 / A / Modernist exploration</span
+      ><a href="postmodernist.html">Compare B ↗</a
+      ><a href="../index.html">Original storefront ↗</a>
+    </div>
+    <header class="masthead">
+      <a class="wordmark" href="#main" aria-label="OFFHOUR preview home"
+        >OFFHOUR<span aria-hidden="true">/</span></a
+      >
+      <p>AFTER HOURS. YOUR RULES.</p>
+      <a href="#demo-bag">Demo bag [<span id="bag-count">0</span>]</a>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="headline">
+        <div class="intro">
+          <p class="eyebrow">OFFHOUR / WHITE T-SHIRT</p>
+          <h1 id="headline">
+            <span>Off the clock.</span><span>On your terms.</span>
+          </h1>
+          <p class="support">
+            A plain white T-shirt. A starting point for your own expression.
+          </p>
+        </div>
+        <figure class="product-plate">
+          <div class="plate-label">
+            <span>01 / WHITE T-SHIRT</span><span>PRODUCT ILLUSTRATION</span>
+          </div>
+          <img
+            src="../assets/white-shirt.svg"
+            alt="Plain white, unbranded short-sleeved T-shirt"
+            width="800"
+            height="880"
+            fetchpriority="high"
+          />
+          <figcaption>One white T-shirt. Your point of view.</figcaption>
+        </figure>
+        <div class="shop">
+          <div class="product-row">
+            <h2>The white T-shirt.</h2>
+            <p class="price">$28 <span>USD</span></p>
+          </div>
+          <p class="demo-price">Fictional demo price</p>
+          <form id="product-form" novalidate>
+            <fieldset aria-describedby="size-help size-error">
+              <legend>Choose a size</legend>
+              <p id="size-help">Demo sizes: S, M, L, and XL.</p>
+              <div class="sizes">
+                <label
+                  ><input type="radio" name="size" value="S" /><span
+                    >S</span
+                  ></label
+                ><label
+                  ><input type="radio" name="size" value="M" /><span
+                    >M</span
+                  ></label
+                ><label
+                  ><input type="radio" name="size" value="L" /><span
+                    >L</span
+                  ></label
+                ><label
+                  ><input type="radio" name="size" value="XL" /><span
+                    >XL</span
+                  ></label
+                >
+              </div>
+              <p id="size-error" role="alert" hidden>
+                Choose a size before adding the shirt to your demo bag.
+              </p>
+            </fieldset>
+            <button class="add" type="submit">
+              Add to demo bag <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+          <p class="disclaimer">
+            Classroom demo only. No checkout or payment. Fit and fabric details
+            have not been supplied.
+          </p>
+        </div>
+      </section>
+      <section id="demo-bag" class="bag" aria-labelledby="bag-title">
+        <h2 id="bag-title">Your demo bag.</h2>
+        <div>
+          <p
+            id="bag-status"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            Your demo bag is empty. Choose a size to try it.
+          </p>
+          <ul id="bag-items"></ul>
+          <button id="clear-bag" type="button" disabled>Empty demo bag</button>
+          <p class="disclaimer">
+            The bag resets when this page reloads. There is no checkout.
+          </p>
+        </div>
+      </section>
+      <section class="annotations" aria-labelledby="notes-title">
+        <p class="eyebrow">DESIGN NOTES / A / Modernist</p>
+        <h2 id="notes-title">Ordered after dark</h2>
+        <dl>
+          <div>
+            <dt>Reference inspected</dt>
+            <dd>
+              <a href="https://syjmb.foundation/en/josef-mueller-brockmann/"
+                >Josef Müller-Brockmann, Beethoven concert poster, 1955 ↗</a
+              >
+              <p>
+                A large geometric field carries the visual energy while compact
+                sans-serif information stays grouped.
+              </p>
+            </dd>
+          </div>
+          <div>
+            <dt>Design choices</dt>
+            <dd>
+              A two-column grid separates expression from shopping. A single
+              sans-serif family and consistent alignment create hierarchy. A
+              restrained burgundy circle translates the poster’s geometric
+              rhythm into a product stage.
+            </dd>
+          </div>
+          <div>
+            <dt>Intended effect (hypothesis)</dt>
+            <dd>
+              The primary visitor gets a confident identity and a direct route
+              to the shirt; the secondary visitor can inspect an uncluttered
+              product image.
+            </dd>
+          </div>
+          <div>
+            <dt>Risk to review</dt>
+            <dd>
+              The order may feel too controlled for a visitor seeking a more
+              disruptive streetwear identity.
+            </dd>
+          </div>
+        </dl>
+        <p>
+          Both previews use identical product content and the original shirt
+          asset. These are proposals; no final direction or logo has been
+          selected.
+        </p>
+      </section>
+    </main>
+    <footer>
+      OFFHOUR / IS117 BRAND STUDIO <span>PREVIEW ONLY — NOT A LIVE STORE</span>
+    </footer>
+  </body>
+</html>

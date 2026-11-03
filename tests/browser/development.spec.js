@@ -27,11 +27,11 @@ test("development refreshes saved HTML, CSS, JavaScript and assets; plain previe
     target.waitForResponse(
       (response) => new URL(response.url()).pathname === "/__dev/events",
     );
-  const save = async (filename, transform) => {
+  const save = async (filename, transform, encoding = "utf8") => {
     const nextConnection = connected(page);
     const loaded = page.waitForEvent("load");
     const file = path.join(publicRoot, filename);
-    await writeFile(file, transform(await readFile(file, "utf8")));
+    await writeFile(file, transform(await readFile(file, encoding)));
     await loaded;
     await nextConnection;
   };
@@ -75,12 +75,25 @@ test("development refreshes saved HTML, CSS, JavaScript and assets; plain previe
       "saved-js",
     );
 
-    await save("assets/white-shirt.svg", (svg) =>
-      svg.replace("<svg ", '<svg width="123" height="123" '),
+    const asset = await readFile(
+      path.join(publicRoot, "assets/concepts/front.jpg"),
     );
-    await expect(
-      page.locator('img[src="assets/white-shirt.svg"]'),
-    ).toHaveJSProperty("naturalWidth", 123);
+    const changedAsset = Buffer.concat([asset, Buffer.from("\n")]);
+    const imageResponse = page.waitForResponse(
+      (response) =>
+        new URL(response.url()).pathname === "/assets/concepts/front.jpg",
+    );
+    await save("assets/concepts/front.jpg", () => changedAsset, null);
+    expect(await (await imageResponse).body()).toEqual(changedAsset);
+    await expect(page.locator("#gallery-image")).toHaveJSProperty(
+      "complete",
+      true,
+    );
+    expect(
+      await page
+        .locator("#gallery-image")
+        .evaluate((image) => image.naturalWidth),
+    ).toBeGreaterThan(0);
 
     await expect(plain).toHaveTitle(originalTitle);
     await expect(plain.locator('script[src="/__dev/reload.js"]')).toHaveCount(
