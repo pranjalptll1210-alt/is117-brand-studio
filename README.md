@@ -2,7 +2,7 @@
 
 **The same white T-shirt can carry very different meanings.** Develop a brand for it with an AI collaborator, then make those decisions visible in a professional website and a live style guide.
 
-OFFHOUR now has a Design A storefront, original O/H logo, labeled generated concept imagery, interactive product gallery, free styling ideas and a shared live style guide. BRAND-001 is in final review on `codex/brand-001-offhour`; design and implementation are completed and the learning record is reviewed; final review, pull request and merge are pending. This is a local demo, not a published shop. The setup instructions below are retained for new clones.
+OFFHOUR now has a Design A storefront, original O/H logo, labeled generated concept imagery, interactive product gallery, free styling ideas and a shared live style guide. BRAND-001 is in final review on `codex/brand-001-offhour`; design and implementation are completed and the learning record is reviewed; [pull request #2](https://github.com/pranjalptll1210-alt/is117-brand-studio/pull/2) is open for final review; merge is pending. This is a local demo, not a published shop. The setup instructions below are retained for new clones.
 
 **A short record, visible to you:** your AI coach updates [LEARNING.md](LEARNING.md) with brief task-related explanations, observations and help received. It is AI-drafted, not a full transcript, and may be public with your repository. Review it and correct or remove excerpts before they are committed or pushed. Your instructor uses it alongside the project with this [simple three-part rubric](docs/assessment.md); the AI does not assign your grade.
 
